@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>CitizenHacks</title>
+  <meta name="description" content="citizen hacks website!">
+  <meta name="author" content="wuon">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600,900,200|Lato:400,300,600,900,200" rel="stylesheet"
+    type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="anime.min.js"></script>
+  <script src="main.js"></script>
+
+  <link rel="icon" href="assets/favicon.png">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-container">
+      <div class="horizontal">
+        <div class="header-title">
+            <img class="header-logo" src="assets/small.svg" alt="CitizenHacks">
+        </div>
+      </div>
+      <div class="horizontal" id="links">
+        <div>
+          <a class="link"></a>
+        </div>
+        <div>
+          <a class="link"></a>
+        </div>
+        <div>
+          <a class="link"></a>
+        </div>
+        <div>
+          <a class="link"></a>
+        </div>
+        <div>
+          <a class="link"></a>
+        </div>
+        <div>
+          <a class="contact-us-button" href="mailto:info@citizenhacks.com">
+            Contact us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="hero-container">
+    <div class="content">
+      <div class="hero center">
+        <div class="hero-content-container vertical center">
+          <div class="hero-big-title opacity">
+              <img class="hero-logo" src="assets/full.svg" alt="CitizenHacks">
+          </div>
+          <div class="sub-title opacity">
+            For 36 hours, join students and leading innovators in tackling the challenge of privacy in the digital age.
+          </div>
+          <div class="sub-title opacity">
+            Featuring keynote speaker Dr. Ann Cavoukian.
+          </div>
+          <div>
+            <p class="date opacity">January 11-13, 2019</p>
+          </div>
+          <div>
+            <a class="learn-more-button opacity" id="learn-more-button">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-container" id="about">
+    <div class="vertical about center">
+      <div class="about-title">
+        About
+      </div>
+      <div class="pink-line"></div>
+      <hr class="hr-pink"/>
+      <div class="about-description">
+        Youth play an essential role in defining our digital future. That’s why we created CitizenHacks, a student-run
+        hackathon that encourages the next generation of innovators and users to actively participate in building a
+        digital world that works for everyone.
+      </div>
+      <div class="about-description">
+        CitizenHacks is a platform for university and high school students to collaborate with educators, businesses,
+        nonprofits, and governmental organizations in exploring the challenges and potential of creating technology
+        that benefits society.
+      </div>
+    </div>
+  </div>
+  <!--
+<div class="stats-container">
+    <div class="horizontal stats">
+      <div>
+        <span class="stats-number" id="people"></span>
+        <span class="stats-text"> hackers </span>
+      </div>
+      <div>
+        <span class="stats-number" id="speaker"></span>
+        <span class="stats-text"> speakers </span>
+      </div>
+      <div>
+        <span class="stats-number" id="sponsor"></span>
+        <span class="stats-text"> sponsors </span>
+      </div>
+    </div>
+  </div>
+  <div class="faq-container">
+    <div class="vertical">
+      <div class="about-title">
+        FAQ
+      </div>
+      <div class="section-sub-title">
+        Got any burning questions? Check out below to see if any answer yours!
+      </div>
+      <div class="masonry">
+        <div class="faq-section">
+          <div class="faq-body">
+            <div class="faq-title">
+              Where is the hackathon?
+            </div>
+            <div class="faq-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-body">
+            <div class="faq-title">
+              Is it free?
+            </div>
+            <div class="faq-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-body">
+            <div class="faq-title">
+              Do I have to build something?
+            </div>
+            <div class="faq-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+        </div>
+        <div class="vertical faq-section">
+          <div class="faq-body">
+            <div class="faq-title">
+              What are the rules?
+            </div>
+            <div class="faq-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  
+  <footer>
+    <div class="footer-prelude">
+    </div>
+    <div class="footer-container">
+      <div class="horizontal">
+        <div class="header-title">
+            <img class="header-logo" src="assets/small.svg" alt="CitizenHacks">
+        </div>
+      </div>
+      <!--
+        <div class="horizontal right">
+        <div class="icon-container">
+          <a class="icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="icon-container">
+          <a class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="icon-container">
+          <a class="icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      -->
+    </div>
+  </footer>
+
+  <!---
+  <div class="sidebar-container">
+    <div class="content">
+      <div class="vertical left">
+        <div class="title">
+          CitizenHacks
+        </div>
+        <div class="vertical left" id="links">
+          <div>
+            <a class="link">Home</a>
+          </div>
+          <div>
+            <a class="link">About</a>
+          </div>
+          <div>
+            <a class="link">Sponsors</a>
+          </div>
+          <div>
+            <a class="link">FAQ</a>
+          </div>
+          <div>
+            <a class="link">Contact</a>
+          </div>
+        </div>
+        <a class="contact-us-button">
+          Contact us
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="vertical-line-container">
+  </div>
+  <div class="main-container">
+    <div class="scroll-container">
+      <div class="content first">
+        <div class="vertical hero center">
+          <div class="hero-big-title">
+            CitizenHacks
+          </div>
+          <div class="sub-title">
+            For 36 hours, join students and leading innovators in tackling
+            <br/>the challenge of privacy in the digital age.
+          </div>
+          <div>
+            <p class="date">January 11-13, 2019</p>
+          </div>
+          <div>
+            <a class="header-link learn-more-button">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content last">
+        <div class="vertical about center">
+          <div class="about-title">
+            About
+          </div>
+          <div class="sub-title">
+            We created CitizenHacks to give our peers an opportunity to learn how
+            <br/>to create technology that respects and promotes everyone's digital rights.
+          </div>
+          <div class="horizontal">
+            <div class="vertical">
+              <div class="about-text-container">
+                <p class="align-left bold">Who we are:</p>
+                <p class="align-left">
+                  Youth play an essential role in defining our digital future. That’s why we created CitizenHacks, a youth- run hackathon that
+                  encourages the next generation of innovators and users to actively participate in building a digital world
+                  that works for everyone.
+                </p>
+              </div>
+            </div>
+            <div class="vertical">
+              <div class="about-text-container">
+                <p class="align-left bold">What we do:</p>
+                <p class="align-left">
+                  CitizenHacks is a platform for university and high school students to collaborate with educators, businesses, nonprofits,
+                  and governmental organizations in exploring the challenges and potential of creating technology that benefits
+                  society.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-wide-container">
+                CitizenHacks is a platform for university and high school students to collaborate with educators, businesses, nonprofits,
+                and governmental organizations in exploring the challenges and potential of creating technology that benefits
+                society.
+          </div>
+            <div class="about-text-wide-container">
+                The keynote speaker at the event will be Dr. Ann Cavoukian, the director of the Privacy by Design Centre for Excellence and
+                the former Information and Privacy Commissioner of Ontario. Her pioneering work in Privacy by Design has been
+                recognized and adopted around the world.
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+</body>
+
+</html>
