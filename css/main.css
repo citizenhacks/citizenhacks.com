@@ -182,9 +182,13 @@ header {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    #links {
-        display: none;
+@media only screen and (max-width: 375px) {
+    .contact-us-button{
+        font-size: 0.6rem;
+    }
+
+    .header-logo{
+        width: 75px;   
     }
 }
 
@@ -257,12 +261,9 @@ header {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1440px) {
-    .hero-big-title {
-        font-size: 5rem;
-    }
+@media only screen and (max-width: 1024px) {
     .sub-title {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .date {
         font-size: 2rem;
@@ -273,9 +274,27 @@ header {
     }
 }
 
-@media only screen and (max-width: 850px) {
-    .hero-big-title {
-        font-size: 3rem;
+
+@media only screen and (max-width: 768px) {
+    .hero-logo{
+        width: 500px;
+    }
+    .sub-title {
+        font-size: 1.1rem;
+    }
+    .date {
+        font-size: 1.5rem;
+    }
+    .learn-more-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media only screen and (max-width: 414px) {
+    .hero-logo {
+        width: 375px;
     }
     .sub-title {
         font-size: 1rem;
@@ -284,30 +303,33 @@ header {
         font-size: 1.3rem;
     }
     .learn-more-button {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.7rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    .hero-content-container{
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 375px) {
+    .hero-logo {
+        width: 350px;
+    }
     .sub-title {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .hero-big-title {
-        font-size: 2rem;
+    .hero-logo {
+        width: 300px;
     }
     .sub-title {
-        font-size: 0.6rem;
-    }
-    .date {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .learn-more-button {
-        padding: 0.5rem 1rem;
-        font-size: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -351,6 +373,24 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .about {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .about-container {
+        padding:  3rem 1.5rem;
+    }
 }
 
 /* STATS */
@@ -464,6 +504,12 @@ footer {
 
 .icon-container {
     padding: 0rem 1rem;
+}
+
+@media only screen and (max-width: 414px) {
+    .footer-prelude{
+        display: none;
+    }
 }
 
 /* ANIMATION */
