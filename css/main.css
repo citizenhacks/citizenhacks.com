@@ -88,6 +88,15 @@ body {
     }
 }
 
+@media only screen and (max-width: 414px) {
+    .vertical{
+        align-items: left;
+    }
+    .center{
+        align-items: unset;
+    }
+}
+
 /* HEADER */
 
 header {
@@ -228,7 +237,7 @@ header {
 
 .sub-title {
     color: #222222;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 200;
     text-align: center;
 }
@@ -294,36 +303,31 @@ header {
 
 @media only screen and (max-width: 414px) {
     .hero-logo {
-        width: 375px;
+        content:url('../assets/vertical.svg');
+        width: 100%;
     }
     .sub-title {
         font-size: 1rem;
+        text-align: left;
     }
     .date {
         font-size: 1.3rem;
+        text-align: left;
     }
     .learn-more-button {
         padding: 1rem 2rem;
         font-size: 1rem;
-    }
-    .hero-content-container{
-        width: 100%;
+        width: 125px;
     }
 }
 
 @media only screen and (max-width: 375px) {
-    .hero-logo {
-        width: 350px;
-    }
     .sub-title {
         font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .hero-logo {
-        width: 300px;
-    }
     .sub-title {
         font-size: 0.8rem;
     }
@@ -384,6 +388,9 @@ header {
 @media only screen and (max-width: 414px) {
     .about {
         width: 100%;
+    }
+    .about-title{
+        padding: 1rem;
     }
 }
 
