@@ -16,7 +16,7 @@ $(window).scroll(function () {
             prop2: 0,
             prop3: 0
         }
-        
+
         var JSobjectProp = anime({
             targets: myObject,
             prop1: 150,
@@ -28,10 +28,10 @@ $(window).scroll(function () {
             update: function () {
                 var el = document.querySelector('#people');
                 el.innerHTML = JSON.stringify(myObject.prop1);
-        
+
                 var el2 = document.querySelector('#speaker');
                 el2.innerHTML = JSON.stringify(myObject.prop2);
-        
+
                 var el3 = document.querySelector('#sponsor');
                 el3.innerHTML = JSON.stringify(myObject.prop3);
             }
@@ -42,10 +42,10 @@ $(window).scroll(function () {
 window.onload = function () {
     $("#learn-more-button").click(function() {
 		$('html,body').animate({
-			scrollTop: $("#about").offset().top - 100},
-			'slow');
+      scrollTop: $("#about").offset().top - 100},
+      'slow');
     });
-    
+
     var load = anime({
         targets: '.opacity',
         opacity: 1,
@@ -83,6 +83,6 @@ function hasScrolled() {
             $('header').removeClass('header-up');
         }
     }
-    
+
     lastScrollTop = st;
 }
