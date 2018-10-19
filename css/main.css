@@ -1,7 +1,28 @@
 /* GENERAL */
+@font-face {
+    font-family: product sans;
+    src: url(/assets//Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: product sans;
+    src: url(/assets/Product\ Sans\ Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: noir;
+    src: url(/assets/NoirPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: noir;
+    src: url(/assets/NoirPro-Light.ttf);
+    font-weight: 200;
+}
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'product sans', sans-serif;
     min-height: 100vh;
     max-height: 100vh;
     max-width: 100%;
@@ -108,7 +129,7 @@ a:hover {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
@@ -167,7 +188,7 @@ header {
 }
 
 .header-logo{
-    width: 100px;
+    width: 80px;
 }
 
 .header-up{
@@ -205,7 +226,7 @@ header {
     font-weight: 600;
     outline: none;
     text-decoration: none;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 4rem;
     text-align: center;
     border-style: solid;
     border-width: 2px;
@@ -426,21 +447,6 @@ header {
     padding:  6rem 3rem;
 }
 
-.about-text-container {
-    max-width: 400px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    font-size: 1.1rem;
-    padding: 1rem;
-}
-
-.about-text-wide-container {
-    max-width: 800px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    padding: 1rem;
-}
-
 @media only screen and (max-width: 850px) {
     .about {
         width: 90%;
@@ -489,8 +495,13 @@ header {
 
 .faq-container {
     display: flex;
-    padding: 3rem;
-    min-height: 1800px;
+    justify-content: center;
+    padding:  6rem 3rem;
+}
+
+.column {
+    float: left;
+    width: 50%;
 }
 
 .masonry {
@@ -502,9 +513,7 @@ header {
 }
 
 .faq {
-    height: 100%;
-    width: 60%;
-    color: #222222;
+    width: 65%;
 }
 
 .faq-section {
@@ -529,21 +538,24 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-    .masonry {
+    .faq {
         width: 75%;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .masonry {
+    .faq {
         width: 90%;
+    }
+    .column {
+        float: none;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 414px) {
-    .masonry {
+    .faq {
         width: 100%;
-        max-height: 5000px;
     }
 
     .faq-section{
