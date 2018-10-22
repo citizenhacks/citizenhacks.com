@@ -326,7 +326,7 @@ header {
 }
 
 .header-logo{
-    width: 60px;
+    width: 45px;
     margin: auto;
 }
 
@@ -402,19 +402,11 @@ header {
     .contact-us-button{
         font-size: 1rem;
     }
-
-    .header-logo{
-        width: 75px;
-    }
 }
 
 @media only screen and (max-width: 375px) {
     .contact-us-button{
         font-size: 0.8rem;
-    }
-
-    .header-logo{
-        width: 75px;
     }
 }
 
