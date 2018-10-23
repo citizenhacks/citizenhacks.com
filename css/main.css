@@ -48,8 +48,8 @@ a:hover {
 }
 
 .disable-scrolling{
-    margin: 0; 
-    height: 100%; 
+    margin: 0;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -161,7 +161,7 @@ a:hover {
         height: calc(100% - 3rem);
     }
 }
- 
+
 @media only screen and (max-width: 414px) {
     .vertical{
         align-items: left;
@@ -199,14 +199,14 @@ header {
     visibility: hidden;
     pointer-events: none;
 }
-  
+
 .reveal {
     opacity: .90;
     display: block;
     pointer-events: auto;
     visibility: visible;
     z-index: 101;
-}  
+}
 
 .hamburger-shell {
     position: absolute;
@@ -219,7 +219,7 @@ header {
     left: 2.6rem;
     display: none;
 }
-  
+
 .top, .middle, .bottom{
     position: absolute;
     width: 42px;
@@ -254,7 +254,7 @@ header {
     z-index: 102;
     font-weight: bold;
   }
-  
+
 #menu a li {
     text-decoration: none!important;
     padding-bottom: 10px;
@@ -641,6 +641,10 @@ header {
 }
 
 /* FAQ */
+
+.faq-prelude {
+  height: 150px;
+}
 
 .faq-container {
     display: flex;
