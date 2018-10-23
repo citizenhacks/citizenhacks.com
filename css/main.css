@@ -43,6 +43,10 @@ a:hover {
     /* background by SVGBackgrounds.com */
 }
 
+.prelude{
+    height: 150px;
+}
+
 .mobile{
     display: none;
 }
@@ -171,6 +175,9 @@ a:hover {
     }
     .title{
         padding: 1rem;
+    }
+    .prelude{
+        display: none;
     }
 }
 
@@ -641,11 +648,6 @@ header {
 }
 
 /* FAQ */
-
-.faq-prelude {
-  height: 150px;
-}
-
 .faq-container {
     display: flex;
     justify-content: center;
