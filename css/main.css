@@ -1,7 +1,7 @@
 /* GENERAL */
 @font-face {
     font-family: product sans;
-    src: url(/assets//Product\ Sans\ Regular.ttf);
+    src: url(../assets/Product\ Sans\ Regular.ttf);
 }
 
 @font-face {
@@ -81,6 +81,7 @@ a:hover {
 .left {
     align-items: flex-start;
     justify-content: flex-start;
+    text-align: left;
 }
 
 .right {
@@ -620,6 +621,11 @@ header {
 
     .about-container {
         padding:  3rem 1.5rem;
+    }
+
+    .hero-big-title {
+        font-size: 5rem;
+        font-weight: 600;
     }
 }
 
