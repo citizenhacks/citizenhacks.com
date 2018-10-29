@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900|Lato:300,400" rel="stylesheet"
+          type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Citizen Hacks Application</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <div class = "box">
+            <label for="firstName">First Name</label><br>
+            <input name="firstName" id="firstName" value=""><br>
+        </div>
+        <div class = "box">
+            <label for="lastName">Last Name</label><br>
+            <input name="lastName" id="lastName" value=""><br><br>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <p>We will use your email for future communication</p>
+            <input name="email" id="email" value=""><br><br>
+        </div>
+        <div>
+            <label for="birthday">Birthday</label><br>
+            <input name="birthday" id="birthday" value=""><br><br>
+        </div>
+        <div>
+            <label>Gender</label>
+            <br>
+            <label for="male" class="sub-label">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <label for="female" class="sub-label">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="notSpecified" class="sub-label">Prefer not to specify</label>
+            <input type="radio" name="gender" id="notSpecified" value="notSpecified">
+            <br>
+            <label for="other" class="sub-label">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br>
+            <input type="text" name="otherGender" id="otherGender" value="">
+            <br><br>
+        </div>
+        <div>
+            <label for="studyLevel">Current Level of Study</label><br>
+            <input name="studyLevel" id="studyLevel" value=""><br><br>
+        </div>
+        <div>
+            <label for="school">School</label><br>
+            <input name="school" id="school" value=""><br><br>
+        </div>
+        <div>
+            <label for="program">Program/Major</label><br>
+            <input name="program" id="program" value=""><br><br>
+        </div>
+        <div>
+            <label for="pastHackathons">Past Hackathons</label><br>
+            <input name="pastHackathons" id="pastHackathons" value=""><br><br>
+        </div>
+        <div>
+            <label for="passions">Tell us what you do</label><br>
+            <textarea name="passions" id="passions" cols="40" rows="5" maxlength="600"></textarea><br><br>
+        </div>
+        <div>
+            <label for="pastProject">Describe a past project</label><br>
+            <p>Tell us what it was and what you did</p>
+            <textarea name="pastProject" id="pastProject" cols="40" rows="5" maxlength="600"></textarea><br><br>
+        </div>
+        <div>
+            <label for="lookingForward">What are you looking forward to doing at Citizen Hacks?</label><br>
+            <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
+            <textarea name="lookingForward" id="lookingForward" cols="40" rows="5" maxlength="600"></textarea><br><br>
+        </div>
+
+        <div>
+            <label for="citizenship">What do you think Citizenship means?</label><br><br>
+            <textarea name="citizenship" id="citizenship" cols="40" rows="5" maxlength="600"></textarea><br><br>
+        </div>
+        <div>
+            <label>Additional Info</label>
+            <br><br>
+            <label for="website" class="sub-label">Personal Website</label><br>
+            <input type="text" name="website" id="website"/>
+            <br><br>
+
+            <label for="github" class="sub-label">Github</label><br>
+            <input type="text" name="github" id="github"/>
+            <br><br>
+
+            <label for="linkedin" class="sub-label">Linked In</label><br>
+            <input type="text" name="linkedin" id="linkedin"/>
+            <br><br>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <script>
+        $('input[name="gender"]').click(function(e) {
+            if(e.target.value === "other") {
+                $('#otherGender').show();
+            } else {
+                $('#otherGender').hide();
+            }
+        });
+
+        $('#otherGender').hide();
+    </script>
+</body>
+</html>

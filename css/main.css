@@ -10,6 +10,22 @@
     font-weight: bold;
 }
 
+label {
+    font-family: 'product sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+input {
+    background-color: transparent;
+    border-top: 0;
+    position: relative;
+    line-height: 30px;
+    border-bottom-color: #fff200;
+}
+
 body {
     font-family: 'product sans', sans-serif;
     min-height: 100vh;
@@ -25,6 +41,12 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+
+.sub-label{
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .panel{
