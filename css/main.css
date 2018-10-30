@@ -12,18 +12,16 @@
 
 label {
     font-family: 'product sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display:inline-block;
 }
 
 input {
     background-color: transparent;
     border-top: 0;
-    position: relative;
-    line-height: 30px;
-    border-bottom-color: #fff200;
+    border-bottom-color: #4979ff;
 }
 
 body {
@@ -47,6 +45,18 @@ a:hover {
 .sub-label{
     font-size: 20px;
     font-weight: normal;
+}
+
+.application-header-title h1{
+    display: inline;
+    margin-left: 20px;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .panel{

@@ -18,101 +18,201 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/application.js"></script>
+    <script src="anime.min.js"></script>
 
     <title>Citizen Hacks Application</title>
 </head>
 
 <body>
-    <form action="" method="get">
-        <div class = "box">
-            <label for="firstName">First Name</label><br>
-            <input name="firstName" id="firstName" value=""><br>
-        </div>
-        <div class = "box">
-            <label for="lastName">Last Name</label><br>
-            <input name="lastName" id="lastName" value=""><br><br>
-        </div>
-        <div>
-            <label for="email">Email</label><br>
-            <p>We will use your email for future communication</p>
-            <input name="email" id="email" value=""><br><br>
-        </div>
-        <div>
-            <label for="birthday">Birthday</label><br>
-            <input name="birthday" id="birthday" value=""><br><br>
-        </div>
-        <div>
-            <label>Gender</label>
-            <br>
-            <label for="male" class="sub-label">Male</label>
-            <input type="radio" name="gender" id="male" value="male">
-            <br>
-            <label for="female" class="sub-label">Female</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <br>
-            <label for="notSpecified" class="sub-label">Prefer not to specify</label>
-            <input type="radio" name="gender" id="notSpecified" value="notSpecified">
-            <br>
-            <label for="other" class="sub-label">Other</label>
-            <input type="radio" name="gender" id="other" value="other">
-            <br>
-            <input type="text" name="otherGender" id="otherGender" value="">
-            <br><br>
-        </div>
-        <div>
-            <label for="studyLevel">Current Level of Study</label><br>
-            <input name="studyLevel" id="studyLevel" value=""><br><br>
-        </div>
-        <div>
-            <label for="school">School</label><br>
-            <input name="school" id="school" value=""><br><br>
-        </div>
-        <div>
-            <label for="program">Program/Major</label><br>
-            <input name="program" id="program" value=""><br><br>
-        </div>
-        <div>
-            <label for="pastHackathons">Past Hackathons</label><br>
-            <input name="pastHackathons" id="pastHackathons" value=""><br><br>
-        </div>
-        <div>
-            <label for="passions">Tell us what you do</label><br>
-            <textarea name="passions" id="passions" cols="40" rows="5" maxlength="600"></textarea><br><br>
-        </div>
-        <div>
-            <label for="pastProject">Describe a past project</label><br>
-            <p>Tell us what it was and what you did</p>
-            <textarea name="pastProject" id="pastProject" cols="40" rows="5" maxlength="600"></textarea><br><br>
-        </div>
-        <div>
-            <label for="lookingForward">What are you looking forward to doing at Citizen Hacks?</label><br>
-            <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
-            <textarea name="lookingForward" id="lookingForward" cols="40" rows="5" maxlength="600"></textarea><br><br>
-        </div>
+    <div class="body">
+        <div class="bg-cover" class="reveal"></div>
+        <div class="panel">
+            <header id="header">
+                <div class="header-container">
+                    <div class="horizontal">
+                        <div class="header-title web application-header-title">
+                            <img class="header-logo" src="assets/small.svg" alt="Citizen Hacks">
+                            <h1>Application</h1>
+                        </div>
+                        <div>
+                            <a class="hamburger-shell">
+                                <div class="hamb top"></div>
+                                <div class="hamb middle"></div>
+                                <div class="hamb bottom"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact-us-button mobile" href="mailto:info@citizenhacks.com">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="horizontal links">
+                        <div>
+                            <a class="link" id="hero-button">Home</a>
+                        </div>
+                        <div>
+                            <a class="link" id="about-button">About</a>
+                        </div>
+                        <div>
+                            <a class="link" id="faq-button">FAQ</a>
+                        </div>
+                        <div>
+                            <a class="contact-us-button" href="mailto:info@citizenhacks.com">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <br><br><br><br><br>
+            <h1>Citizen Hacks Application</h1>
+            <form action="" method="get">
+                <div class = "item-required">
+                    <label for="firstName">First Name</label><br>
+                    <input name="firstName" id="firstName" value=""><br>
+                </div>
+                <div class = "item-required">
+                    <label for="lastName">Last Name</label><br>
+                    <input name="lastName" id="lastName" value=""><br><br>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <p>We will use your email for future communication</p>
+                    <input name="email" id="email" value=""><br><br>
+                </div>
+                <div>
+                    <label for="birthday">Birthday</label><br>
+                    <input name="birthday" id="birthday" value=""><br><br>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <br>
+                    <label for="male" class="sub-label">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <br>
+                    <label for="female" class="sub-label">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <br>
+                    <label for="notSpecified" class="sub-label">Prefer not to specify</label>
+                    <input type="radio" name="gender" id="notSpecified" value="notSpecified">
+                    <br>
+                    <label for="other" class="sub-label">Other</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <br>
+                    <input type="text" name="otherGender" id="otherGender" value="">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="studyLevel">Current Level of Study</label><br>
+                    <input name="studyLevel" id="studyLevel" value=""><br><br>
+                </div>
+                <div>
+                    <label for="school">School</label><br>
+                    <input name="school" id="school" value=""><br><br>
+                </div>
+                <div>
+                    <label for="program">Program/Major</label><br>
+                    <input name="program" id="program" value=""><br><br>
+                </div>
+                <div>
+                    <label for="pastHackathons">Past Hackathons</label><br>
+                    <input name="pastHackathons" id="pastHackathons" value=""><br><br>
+                </div>
+                <div>
+                    <label for="passions">Tell us what you do</label><br>
+                    <textarea name="passions" id="passions" cols="40" rows="5" maxlength="600"></textarea><br><br>
+                </div>
+                <div>
+                    <label for="pastProject">Describe a past project</label><br>
+                    <p>Tell us what it was and what you did</p>
+                    <textarea name="pastProject" id="pastProject" cols="40" rows="5" maxlength="600"></textarea><br><br>
+                </div>
+                <div>
+                    <label for="lookingForward">What are you looking forward to doing at Citizen Hacks?</label><br>
+                    <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
+                    <textarea name="lookingForward" id="lookingForward" cols="40" rows="5" maxlength="600"></textarea><br><br>
+                </div>
 
-        <div>
-            <label for="citizenship">What do you think Citizenship means?</label><br><br>
-            <textarea name="citizenship" id="citizenship" cols="40" rows="5" maxlength="600"></textarea><br><br>
-        </div>
-        <div>
-            <label>Additional Info</label>
-            <br><br>
-            <label for="website" class="sub-label">Personal Website</label><br>
-            <input type="text" name="website" id="website"/>
-            <br><br>
+                <div>
+                    <label for="citizenship">What do you think Citizenship means?</label><br><br>
+                    <textarea name="citizenship" id="citizenship" cols="40" rows="5" maxlength="600"></textarea><br><br>
+                </div>
+                <div>
+                    <label>Additional Info</label>
+                    <br><br>
+                    <label for="website" class="sub-label">Personal Website</label>
+                    <input type="text" name="website" id="website"/>
+                    <br><br>
 
-            <label for="github" class="sub-label">Github</label><br>
-            <input type="text" name="github" id="github"/>
-            <br><br>
+                    <label for="github" class="sub-label">Github</label>
+                    <input type="text" name="github" id="github"/>
+                    <br><br>
 
-            <label for="linkedin" class="sub-label">Linked In</label><br>
-            <input type="text" name="linkedin" id="linkedin"/>
-            <br><br>
+                    <label for="linkedin" class="sub-label">Linked In</label>
+                    <input type="text" name="linkedin" id="linkedin"/>
+                    <br><br>
+                </div>
+                <div>
+                    <label for="dietaryRestrictions">Dietary Restrictions</label>
+                    <p>Please list any dietary restrictions. We will try and cater our meals towards certain diets.</p>
+                    <textarea name="dietaryRestrictions" id="dietaryRestrictions" cols="40" rows="5" maxlength="600"></textarea><br><br>
+                </div>
+                <div>
+                    <label>Team</label>
+                    <p>If you are applying with a team, please list your teammate's emails.
+                        Make sure only one member in each team submits this list.
+                        Each team can consist of up to four team members</p>
+                    <label>Teammates</label><br>
+                    <button type="button" name="addMember">Add Team member</button>
+                    <button type="button" name="removeMember">Remove Team member</button><br>
+
+                    <label for="member2" id="member2Label" class="sub-label">Member Email: </label>
+                    <input type="text" name="member2" id="member2"/><br>
+                    <label for="member3" id="member3Label" class="sub-label">Member Email: </label>
+                    <input type="text" name="member3" id="member3"/><br>
+                    <label for="member4" id="member4Label" class="sub-label">Member Email: </label>
+                    <input type="text" name="member4" id="member4"/><br>
+                </div>
+                <br><br>
+                <div>
+                    <a href="#" onclick="formcheck(); return false">Submit</a>
+                </div>
+                <br><br>
+            </form>
+            <footer>
+                <!--<div class="footer-prelude">
+                </div>-->
+                <div class="footer-container">
+                    <div class="horizontal">
+                        <div class="header-title">
+                            <img class="header-logo" src="assets/small.svg" alt="Citizen Hacks">
+                        </div>
+                    </div>
+                    <!--
+                      <div class="horizontal right">
+                      <div class="icon-container">
+                        <a class="icon">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </div>
+                      <div class="icon-container">
+                        <a class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </div>
+                      <div class="icon-container">
+                        <a class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </div>
+                    </div>
+                    -->
+                </div>
+            </footer>
         </div>
-        <div>
-            <button>Submit</button>
-        </div>
-    </form>
+    </div>
 
     <script>
         $('input[name="gender"]').click(function(e) {
@@ -122,6 +222,43 @@
                 $('#otherGender').hide();
             }
         });
+        $('button[name="addMember"]').click(function(e) {
+            if ($('#member3Label').is(":visible")) {
+                $('#member4Label').show();
+                $('#member4').show();
+                $('button[name="removeMember4"]').show();
+            } else if ($('#member2Label').is(":visible")) {
+                $('#member3Label').show();
+                $('#member3').show();
+                $('button[name="removeMember3"]').show();
+            } else {
+                $('#member2Label').show();
+                $('#member2').show();
+                $('button[name="removeMember2"]').show();
+            }
+        });
+        $('button[name="removeMember"]').click(function(e) {
+            if ($('#member4Label').is(":visible")) {
+                $('#member4Label').hide();
+                $('#member4').hide().val('');
+                $('button[name="removeMember4"]').hide();
+            } else if ($('#member3Label').is(":visible")) {
+                $('#member3Label').hide();
+                $('#member3').hide().val('');
+                $('button[name="removeMember3"]').hide();
+            } else {
+                $('#member2Label').hide();
+                $('#member2').hide().val('');
+                $('button[name="removeMember2"]').hide();
+            }
+
+        });
+        $('#member2Label').hide();
+        $('#member2').hide();
+        $('#member3Label').hide();
+        $('#member3').hide();
+        $('#member4Label').hide();
+        $('#member4').hide();
 
         $('#otherGender').hide();
     </script>
