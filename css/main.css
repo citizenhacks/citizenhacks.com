@@ -256,7 +256,7 @@ header {
     opacity: 100;
     z-index: 102;
     top: 1rem;
-    left: 2.6rem;
+    left: 1.5rem;
     display: none;
 }
 
@@ -358,7 +358,7 @@ header {
     display: flex;
     height: 60px;
     justify-content: center;
-    padding: 1rem 3rem;
+    padding: 1rem;
     color: #222222;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;

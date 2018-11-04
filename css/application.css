@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding:  6rem 3rem;
-    background-color: #fafafa;
+    background: #fafafa url(../assets/bg.png);
 }
 
 .application{
@@ -134,7 +134,8 @@ textarea:focus {
 
 .submit {
     display: block;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 700;
     outline: none;
     text-decoration: none;
     padding: 1rem 0rem;
