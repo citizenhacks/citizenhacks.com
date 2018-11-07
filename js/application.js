@@ -26,16 +26,27 @@ window.onload = function () {
 
 function formcheck() {
     var fields = $(".item-required")
-        .find("select, textarea, input").serializeArray();
+        .find("select, textarea, input");
     var msg = "";
     var flag = false;
     $.each(fields, function(i, field) {
-        if (!field.value) {
-            msg += field.name + " ";
+        if (!$(field).val()) {
+            if ($(field).is("textarea")) {
+                $(field).attr("placeholder", "Required");
+            } else {
+                $(field).css('background-color', '#ffb6c0');
+            }
+
             flag = true;
+        } else {
+            if ($(field).is("textarea")) {
+                $(field).css('background', 'transparent');
+            } else {
+                $(field).css('background-color', '#ffffff');
+            }
         }
     });
-    if (flag) alert(msg + ' is required');
+    if (flag) alert('Missing required fields!');
     console.log(fields);
 }
 

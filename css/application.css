@@ -128,8 +128,7 @@ textarea {
 }
 
 textarea:focus {
-    background: #222222;
-    color: #fafafa;
+    color: #222222;
 }
 
 .submit {
