@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900|Lato:300,400" rel="stylesheet"
+          type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/application.css">
+
+    <!-- Script
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/application.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="main.js"></script>
+
+    <title>Citizen Hacks</title>
+</head>
+
+<body>
+<div class="body">
+    <div class="bg-cover" class="reveal"></div>
+    <div class="panel">
+        <header id="header">
+            <div class="header-container">
+                <div class="horizontal">
+                    <div class="header-title web application-header-title">
+                        <a href="index.html">
+                            <img class="header-logo" src="assets/small.svg" alt="Citizen Hacks">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="hamburger-shell">
+                            <div class="hamb top"></div>
+                            <div class="hamb middle"></div>
+                            <div class="hamb bottom"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="mobile">
+                            <a class="link" href="index.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal links">
+                    <div>
+                        <a class="link" id="about-button"></a>
+                    </div>
+                    <div>
+                        <a class="link" id="faq-button"></a>
+                    </div>
+                    <div>
+                        <a class="link" href="index.html"></a>
+                    </div>
+                    <div>
+                        <a class="link" href="index.html">Home</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="application-container">
+            <div class="application center">
+                <div class="mobile bumper"></div>
+                <h1>Citizen Hacks Application</h1>
+                <p>Please fill out the information below</p>
+                <div class="pink-line"></div>
+                <form action="" method="get">
+                    <h2>Contact information</h2>
+                    <p>We will use your email for future communication</p>
+                    <div class="item-required">
+                        <input name="firstName" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="item-required">
+                        <input name="lastName" id="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="item-required">
+                        <input name="email" id="email" placeholder="Email" style="border: solid 1px #222222;">
+                    </div>
+                    <div class="blue-line"></div>
+                    <h2>Personal details</h2>
+                    <div class="item-required">
+                        <label>
+                            <select>
+                                <option value="" disabled selected>Are you above the age of 18?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="item-required">
+                        <label>
+                            <select>
+                                <option value="" disabled selected>What is your gender?</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="None">Prefer not to specify</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="item-required">
+                        <label>
+                            <select>
+                                <option value="" disabled selected>Current level of study?</option>
+                                <option value="HighSchool">High school</option>
+                                <option value="Undergraduate">Undergraduate</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="item-required">
+                        <input name="school" id="school" placeholder="School">
+                    </div>
+                    <div class="item-required">
+                        <input name="program" id="program" placeholder="Program/Major">
+                    </div>
+                    <div class="item-required">
+                        <label>
+                            <select style="border: solid 1px #222222;">
+                                <option value="" disabled selected>How many hackathons have you attended?</option>
+                                <option value="0">0</option>
+                                <option value="1-3">1-3</option>
+                                <option value="4-7">4-7</option>
+                                <option value="8+">8+</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="yellow-line"></div>
+                    <h2>Tell us about yourself</h2>
+                    <p>We want to learn more about you :)</p>
+                    <p>(max 600 characters)</p>
+                    <div class="item-required">
+                        <textarea name="passions" id="passions" cols="40" rows="4" maxlength="600"></textarea>
+                    </div>
+                    <div class="pink-line"></div>
+                    <h2>Describe a past project</h2>
+                    <p>Tell us what it was and what you did!</p>
+                    <p>(max 600 characters)</p>
+                    <div class="item-required">
+                        <textarea name="pastProject" id="pastProject" cols="40" rows="4" maxlength="600"></textarea>
+                    </div>
+                    <div class="blue-line"></div>
+                    <h2>What are you looking forward to?</h2>
+                    <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
+                    <p>(max 600 characters)</p>
+                    <div class="item-required">
+                        <textarea name="lookingForward" id="lookingForward" cols="40" rows="4"
+                                  maxlength="600"></textarea>
+                    </div>
+                    <div class="yellow-line"></div>
+                    <h2>What do you think Citizenship means?</h2>
+                    <p>It's called 'Citizen' Hacks for a reason ;)</p>
+                    <p>(max 600 characters)</p>
+                    <div class = "item-required">
+                        <textarea name="citizenship" id="citizenship" cols="40" rows="4" maxlength="600"></textarea>
+                    </div>
+                    <div class="pink-line"></div>
+                    <h2>Additional Info (Optional)</h2>
+                    <p>Show us some of your projects!</p>
+                    <div>
+                        <input type="text" name="website" id="website" placeholder="Personal Website (Optional)"/>
+                    </div>
+                    <div>
+                        <input type="text" name="github" id="github" placeholder="Github (Optional)"/>
+                    </div>
+                    <div>
+                        <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn (Optional)"/>
+                    </div>
+                    <div>
+                        <input type="text" name="devpost" id="devpost" placeholder="Devpost (Optional)"
+                               style="border: solid 1px #222222;"/>
+                    </div>
+                    <div class="blue-line"></div>
+                    <h2>Dietary Restrictions</h2>
+                    <p>We will try and cater our meals towards certain diets. Specify "None"
+                        if you have no dietary restrictions.</p>
+                    <div class="item-required">
+                        <textarea name="dietaryRestrictions" id="dietaryRestrictions" cols="40" rows="5"
+                                  maxlength="600"></textarea>
+                    </div>
+                    <div class="yellow-line"></div>
+                    <h2>Team (Optional)</h2>
+                    <p>If you are applying with a team, please list your teammate's emails.
+                        Make sure only one member in each team submits this list.
+                        Each team can consist of up to four team members</p>
+                    <div>
+                        <div>
+                            <input type="text" name="member1" id="member1" placeholder="[1] Member's email"/>
+                        </div>
+                        <div>
+                            <input type="text" name="member2" id="member2" placeholder="[2] Member's email"/>
+                        </div>
+                        <div>
+                            <input type="text" name="member3" id="member3" placeholder="[3] Member's email"
+                                   style="border: solid 1px #222222;"/>
+                        </div>
+                    </div>
+                    <div class="pink-line"></div>
+                    <div>
+                        <a class="submit" href="#" onclick="formcheck(); return false">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="horizontal">
+                    <div class="header-title">
+                        <img class="header-logo" src="assets/small.svg" alt="Citizen Hacks">
+                    </div>
+                </div>
+                <div class="horizontal right">
+                    <div class="icon-container">
+                        <a class="icon" href="https://www.facebook.com/citizenhacks">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a class="icon" href="https://www.twitter.com/CitizenHacks">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

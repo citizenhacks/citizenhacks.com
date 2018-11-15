@@ -1,0 +1,181 @@
+/* Application */
+
+.application-container{
+    display: flex;
+    justify-content: center;
+    padding:  6rem 3rem;
+    background: #fafafa url(../assets/bg.png);
+}
+
+.application{
+    height: 100%;
+    width: 65%;
+    color: #222222;
+}
+
+.bumper{
+    margin-top: 5rem;
+}
+
+.item-required, form, label{
+    width: 100%;
+}
+
+p{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    width: 500px;
+}
+
+.select-dropdown {
+}
+
+.select-dropdown:focus {
+    background: #222222;
+    color: #fafafa;
+}
+
+select {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 502px;
+    padding: 0 15px;
+    height: 51px;
+
+    background: transparent;
+    outline: none;
+    border: solid 1px #222222;
+    border-bottom: none;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    margin-bottom: -5px;
+}
+
+select:focus{
+    background: #222222;
+    color: #fafafa;
+}
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    width: 470px;
+    height: 50px;
+    padding: 0 15px;
+
+    background: transparent;
+    outline: none;
+    color: #222222;
+
+    border-radius: 0;
+    border: solid 1px #222222;
+    border-bottom: none;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    background: #222222;
+    color: #fafafa;
+}
+
+input:focus::placeholder{
+    color:#fafafa;
+}
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 470px;
+    height: 110px;
+    padding: 15px;
+
+    background: transparent;
+    outline: none;
+    resize: none;
+
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+
+    border-radius: 0;
+    border: solid 1px #222222;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    color: #222222;
+}
+
+.submit {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    padding: 1rem 0rem;
+    text-align: center;
+    width: 500px;
+    border: 1px solid #4BB543;
+    color: #4BB543;
+    transition: all .3s ease-in-out;
+}
+
+.submit:hover {
+    color: #fafafa;
+    background-color: #4BB543;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    .application {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .application {
+        width: 100%;
+    }
+
+    .application-container {
+        padding:  3rem 1.5rem;
+    }
+
+    input, textarea{
+        width: calc(100% - 2rem);
+    }
+
+    .submit{
+        width: calc(100% - 2px);
+    }
+
+    select, p{
+        width: 100%;
+    }
+
+}
