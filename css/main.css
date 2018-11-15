@@ -10,10 +10,6 @@
     font-weight: bold;
 }
 
-* {
-    -webkit-overflow-scrolling: touch;
-}
-
 label {
     font-family: 'product sans', sans-serif;
     font-size: 20px;
@@ -70,6 +66,7 @@ a:hover {
     transition: 100ms;
     background-color: #fafafa;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .prelude {
