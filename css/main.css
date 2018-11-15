@@ -675,6 +675,8 @@ input:focus::placeholder{
         display: block;
         padding: 1rem 0rem;
         width: calc(100% - 2px);
+        background-color: #222222;
+        color: #fafafa;
     }
 }
 
