@@ -18,12 +18,6 @@ label {
     display: inline-block;
 }
 
-input {
-    background-color: transparent;
-    border-top: 0;
-    border-bottom-color: #4979ff;
-}
-
 body {
     font-family: 'product sans', sans-serif;
     min-height: 100vh;
@@ -520,6 +514,63 @@ header {
     cursor: pointer;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+
+    background: transparent;
+    outline: none;
+    color: #222222;
+
+    border-radius: 0;
+    border: solid 1px #222222;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    background: #222222;
+    color: #fafafa;
+}
+
+input:focus::placeholder{
+    color:#fafafa;
+}
+
+.subscribe {
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    width: 400px;
+    border: 1px solid #222222;
+    color: #222222;
+    transition: all .3s ease-in-out;
+}
+
+.subscribe:hover {
+    color: #fafafa;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+.preregistration{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
 @media only screen and (max-width: 1100px) {
     .hero-logo {
         width: 850px;
@@ -604,13 +655,26 @@ header {
         width: 125px;
     }
 
-    .hero-big-title {
-        margin-top: 3rem;
-    }
-
     .hero-content-container {
         width: 100%;
         padding: 3rem 1.5rem;
+    }
+
+    .preregistration{
+        display: block;
+        padding: unset;
+        width: 100%;
+    }
+
+    input{
+        width: calc(100% - 2rem);
+        border-bottom: none;
+    }
+
+    .subscribe{
+        display: block;
+        padding: 1rem 0rem;
+        width: calc(100% - 2px);
     }
 }
 
@@ -722,13 +786,18 @@ header {
 }
 
 .silver {
-    width: 100%;
-    margin: auto;
+    width: 300px;
+    padding: 1rem;
 }
 
 .bronze {
-    width: 25%;
-    margin: auto;
+      width: 200px;
+      padding: 1rem;
+}
+
+.startup {
+    width: 150px;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 414px) {
@@ -741,9 +810,24 @@ header {
         width: 100%;
     }
 
-    .bronze {
-        width: 49%;
+    .gold {
+        width: 600px;
         margin: auto;
+    }
+
+    .silver {
+        width: 250px;
+        padding: 1rem 0.5rem;
+    }
+
+    .bronze {
+        width: 150px;
+        padding: 1rem 0.5rem;
+    }
+
+    .startup {
+        width: 100px;
+        padding: 1rem 0.5rem;
     }
 }
 
