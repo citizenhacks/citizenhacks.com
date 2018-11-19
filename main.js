@@ -9,17 +9,17 @@ window.onload = function () {
         didScroll = true;
         /*
         var scrollTop = $(window).scrollTop();
-        
+
         if (scrollTop > 550 && !isStatsActive) {
-    
+
             isStatsActive = true;
-    
+
             var myObject = {
                 prop1: 0,
                 prop2: 0,
                 prop3: 0
             }
-    
+
             var JSobjectProp = anime({
                 targets: myObject,
                 prop1: 150,
@@ -31,10 +31,10 @@ window.onload = function () {
                 update: function () {
                     var el = document.querySelector('#people');
                     el.innerHTML = JSON.stringify(myObject.prop1);
-    
+
                     var el2 = document.querySelector('#speaker');
                     el2.innerHTML = JSON.stringify(myObject.prop2);
-    
+
                     var el3 = document.querySelector('#sponsor');
                     el3.innerHTML = JSON.stringify(myObject.prop3);
                 }
@@ -93,7 +93,7 @@ window.onload = function () {
         $('body').toggleClass('disable-scrolling');
         $('.panel').toggleClass('disable-scrolling');
     });
-    
+
 	$('.bg-cover').click(function(){
 		$('#menu').slideToggle(0);
 		$('.top').toggleClass('rotate');
@@ -119,6 +119,35 @@ window.onload = function () {
         $('body').toggleClass('disable-scrolling');
         $('.panel').toggleClass('disable-scrolling');
     })
+}
+
+function formcheck() {
+  var fields = $(".item-required")
+    .find("select, textarea, input");
+  var msg = "";
+  var flag = false;
+  $.each(fields, function(i, field) {
+    if (!$(field).val()) {
+      if ($(field).is("textarea")) {
+        $(field).attr("placeholder", "Required");
+      } else {
+        $(field).css('background-color', '#ffb6c0');
+      }
+
+      flag = true;
+    } else {
+      if ($(field).is("textarea")) {
+        $(field).css('background', 'transparent');
+      } else {
+        $(field).css('background-color', '#ffffff');
+      }
+    }
+  });
+  if (flag) {
+    alert('Missing required fields!');
+    return false;
+  }
+  return true;
 }
 
 
