@@ -73,59 +73,64 @@
             <div class="application center">
                 <div class="mobile bumper"></div>
                 <h1>Citizen Hacks Application</h1>
-                <p>Please fill out the information below</p>
+                <p>Please fill out the information below.<br><br>
+                    * (asterisk) specifies required fields</p>
                 <div class="pink-line"></div>
-                <form action="" method="get">
-                    <h2>Contact information</h2>
-                    <p>We will use your email for future communication</p>
+                <form action="" method="get" onsubmit="return formcheck()">
+                    <h2>Contact information*</h2>
+                    <p>We will use your email for future communication.</p>
                     <div class="item-required">
-                        <input name="firstName" id="firstName" placeholder="First Name">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name*">
                     </div>
                     <div class="item-required">
-                        <input name="lastName" id="lastName" placeholder="Last Name">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name*">
                     </div>
                     <div class="item-required">
-                        <input name="email" id="email" placeholder="Email" style="border: solid 1px #222222;">
+                        <input type="text" name="email" id="email" placeholder="Email*" style="border: solid 1px #222222;">
                     </div>
                     <div class="blue-line"></div>
                     <h2>Personal details</h2>
                     <div class="item-required">
                         <label>
                             <select>
-                                <option value="" disabled selected>Are you above the age of 18?</option>
+                                <option value="" disabled selected>Are you above the age of 18?*</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                             </select>
                         </label>
                     </div>
-                    <div class="item-required">
+                    <div>
                         <label>
-                            <select>
-                                <option value="" disabled selected>What is your gender?</option>
+                            <select onchange="genderSelect(this)">
+                                <option value="" disabled selected>What is your gender? (Optional)</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="None">Prefer not to specify</option>
                                 <option value="Other">Other</option>
-                            </select>
+                            </select><input placeholder="Please specify your gender" type="text" name="otherGender" style="display: none; height: 51px; margin-bottom: -5px;" />
                         </label>
+
                     </div>
                     <div class="item-required">
                         <label>
-                            <select>
-                                <option value="" disabled selected>Current level of study?</option>
+                            <select onchange="studySelect(this)">
+                                <option value="" disabled selected>Current level of study?*</option>
                                 <option value="HighSchool">High school</option>
                                 <option value="Undergraduate">Undergraduate</option>
-                                <option value="Graduate">Graduate</option>
                                 <option value="Other">Other</option>
                             </select>
                         </label>
                     </div>
-                    <div class="item-required">
-                        <input name="school" id="school" placeholder="School">
+                    <div id = "otherStudyDiv">
+                        <input id = "otherStudy" placeholder="Please specify your level of study*" type="text" name="otherStudy" style="display: none; height: 51px;" />
                     </div>
-                    <div class="item-required">
-                        <input name="program" id="program" placeholder="Program/Major">
+                    <div>
+                        <input type="text" name="school" id="school" placeholder="School (Optional)">
                     </div>
+                    <div style="border-bottom: solid 1px #222222; margin-bottom: -5px; width: 502px;">
+                        <input type="text" name="program" id="program" placeholder="Program/Major (Optional)">
+                    </div>
+                    <!--
                     <div class="item-required">
                         <label>
                             <select style="border: solid 1px #222222;">
@@ -137,22 +142,23 @@
                             </select>
                         </label>
                     </div>
+                    -->
                     <div class="yellow-line"></div>
-                    <h2>Tell us about yourself</h2>
+                    <h2>Tell us about yourself*</h2>
                     <p>We want to learn more about you :)</p>
                     <p>(max 600 characters)</p>
                     <div class="item-required">
                         <textarea name="passions" id="passions" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
                     <div class="pink-line"></div>
-                    <h2>Describe a past project</h2>
+                    <h2>Describe a past project*</h2>
                     <p>Tell us what it was and what you did!</p>
                     <p>(max 600 characters)</p>
                     <div class="item-required">
                         <textarea name="pastProject" id="pastProject" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
                     <div class="blue-line"></div>
-                    <h2>What are you looking forward to?</h2>
+                    <h2>What are you looking forward to?*</h2>
                     <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
                     <p>(max 600 characters)</p>
                     <div class="item-required">
@@ -160,7 +166,7 @@
                                   maxlength="600"></textarea>
                     </div>
                     <div class="yellow-line"></div>
-                    <h2>What do you think Citizenship means?</h2>
+                    <h2>What do you think Citizenship means?*</h2>
                     <p>It's called 'Citizen' Hacks for a reason ;)</p>
                     <p>(max 600 characters)</p>
                     <div class = "item-required">
@@ -183,10 +189,10 @@
                                style="border: solid 1px #222222;"/>
                     </div>
                     <div class="blue-line"></div>
-                    <h2>Dietary Restrictions</h2>
-                    <p>We will try and cater our meals towards certain diets. Specify "None"
-                        if you have no dietary restrictions.</p>
-                    <div class="item-required">
+                    <h2>Dietary Restrictions (Optional)</h2>
+                    <p>We will try our best to cater our meals towards certain dietary restrictions.
+                        Please specify if you have any restrictions we should know about.</p>
+                    <div>
                         <textarea name="dietaryRestrictions" id="dietaryRestrictions" cols="40" rows="5"
                                   maxlength="600"></textarea>
                     </div>
@@ -194,7 +200,7 @@
                     <h2>Team (Optional)</h2>
                     <p>If you are applying with a team, please list your teammate's emails.
                         Make sure only one member in each team submits this list.
-                        Each team can consist of up to four team members</p>
+                        Each team can consist of up to four team members.</p>
                     <div>
                         <div>
                             <input type="text" name="member1" id="member1" placeholder="[1] Member's email"/>
@@ -208,6 +214,11 @@
                         </div>
                     </div>
                     <div class="pink-line"></div>
+                    <br>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="newsletter"> I agree to receive follow up emails and newsletters from Citizen Hacks<br>
+                    <br>
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="privacyPolicy"> I have read and agreed to the Privacy Policy of Citizen Hacks<br>
+                    <br>
                     <div>
                         <a class="submit" href="#" onclick="formcheck(); return false">Submit</a>
                     </div>

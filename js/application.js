@@ -34,7 +34,7 @@ function formcheck() {
             if ($(field).is("textarea")) {
                 $(field).attr("placeholder", "Required");
             } else {
-                $(field).css('background-color', '#ffb6c0');
+                $(field).css('background', '#ffb6c0');
             }
 
             flag = true;
@@ -46,8 +46,16 @@ function formcheck() {
             }
         }
     });
-    if (flag) alert('Missing required fields!');
-    console.log(fields);
+    var privacy = $("#privacyPolicy");
+    if (flag) {
+        alert('Missing required fields!');
+        return false;
+    }
+    if ($(privacy).val()) {
+        alert("You must accept the privacy policy");
+        return false;
+    }
+    return true;
 }
 
 
@@ -64,4 +72,34 @@ function hasScrolled() {
         $('header').removeClass('header-up');
     }
     lastScrollTop = st;
+}
+
+function genderSelect(dropDown) {
+    var textbox = dropDown.form.elements["otherGender"];
+    if (textbox) {
+        textbox.style.display = (dropDown.value === "Other") ? "" : "none";
+        if (dropDown.value === "Other") {
+            textbox.focus();
+        }
+    }
+}
+
+function studySelect(dropDown) {
+    var textbox = dropDown.form.elements["otherStudy"];
+    var div = document.getElementById("otherStudyDiv");
+    if (textbox) {
+        textbox.style.display = (dropDown.value === "Other") ? "" : "none";
+        if (dropDown.value === "Other") {
+            textbox.focus();
+            if (!div.classList.contains("item-required")) div.classList.add("item-required");
+        } else {
+            if (div.classList.contains("item-required")) {
+                div.classList.remove("item-required");
+                console.log("remoevd item required");
+                var input = document.getElementById("otherStudy");
+                input.style.background = '#ffffff';
+
+            }
+        }
+    }
 }
