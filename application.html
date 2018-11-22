@@ -20,6 +20,7 @@
 
     <!-- Script
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/application.js"></script>
     <script src="anime.min.js"></script>
@@ -87,7 +88,7 @@
                     <div class="item-required">
                         <input name="email" id="email" placeholder="Email" style="border: solid 1px #222222;">
                     </div>
-                    <div class="blue-line"></div>
+                    <div class="blue-line line"></div>
                     <h2>Personal details</h2>
                     <div class="item-required">
                         <label>
@@ -137,36 +138,28 @@
                             </select>
                         </label>
                     </div>
-                    <div class="yellow-line"></div>
+                    <div class="yellow-line line"></div>
                     <h2>Tell us about yourself</h2>
                     <p>We want to learn more about you :)</p>
                     <p>(max 600 characters)</p>
                     <div class="item-required">
                         <textarea name="passions" id="passions" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
-                    <div class="pink-line"></div>
+                    <div class="pink-line line"></div>
                     <h2>Describe a past project</h2>
                     <p>Tell us what it was and what you did!</p>
                     <p>(max 600 characters)</p>
                     <div class="item-required">
                         <textarea name="pastProject" id="pastProject" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
-                    <div class="blue-line"></div>
-                    <h2>What are you looking forward to?</h2>
-                    <p>Excited for the speakers? Passionate about privacy? Love hacking?</p>
-                    <p>(max 600 characters)</p>
-                    <div class="item-required">
-                        <textarea name="lookingForward" id="lookingForward" cols="40" rows="4"
-                                  maxlength="600"></textarea>
-                    </div>
-                    <div class="yellow-line"></div>
+                    <div class="blue-line line"></div>
                     <h2>What do you think Citizenship means?</h2>
                     <p>It's called 'Citizen' Hacks for a reason ;)</p>
                     <p>(max 600 characters)</p>
                     <div class = "item-required">
                         <textarea name="citizenship" id="citizenship" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
-                    <div class="pink-line"></div>
+                    <div class="yellow-line line"></div>
                     <h2>Additional Info (Optional)</h2>
                     <p>Show us some of your projects!</p>
                     <div>
@@ -182,7 +175,7 @@
                         <input type="text" name="devpost" id="devpost" placeholder="Devpost (Optional)"
                                style="border: solid 1px #222222;"/>
                     </div>
-                    <div class="blue-line"></div>
+                    <div class="pink-line line"></div>
                     <h2>Dietary Restrictions</h2>
                     <p>We will try and cater our meals towards certain diets. Specify "None"
                         if you have no dietary restrictions.</p>
@@ -190,7 +183,7 @@
                         <textarea name="dietaryRestrictions" id="dietaryRestrictions" cols="40" rows="5"
                                   maxlength="600"></textarea>
                     </div>
-                    <div class="yellow-line"></div>
+                    <div class="blue-line line"></div>
                     <h2>Team (Optional)</h2>
                     <p>If you are applying with a team, please list your teammate's emails.
                         Make sure only one member in each team submits this list.
@@ -207,7 +200,7 @@
                                    style="border: solid 1px #222222;"/>
                         </div>
                     </div>
-                    <div class="pink-line"></div>
+                    <div class="yellow-line line"></div>
                     <div>
                         <a class="submit" href="#" onclick="formcheck(); return false">Submit</a>
                     </div>
@@ -230,6 +223,11 @@
                     <div class="icon-container">
                         <a class="icon" href="https://www.twitter.com/CitizenHacks">
                             <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a class="icon" rel="me" href="https://mastodon.social/@citizenhacks">
+                            <i class="fab fa-mastodon"></i>
                         </a>
                     </div>
                 </div>

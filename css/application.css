@@ -17,6 +17,10 @@
     margin-top: 5rem;
 }
 
+.line{
+    margin: 2.5rem 0;
+}
+
 .item-required, form, label{
     width: 100%;
 }
@@ -140,15 +144,21 @@ textarea:focus {
     padding: 1rem 0rem;
     text-align: center;
     width: 500px;
-    border: 1px solid #4BB543;
-    color: #4BB543;
+    border: 1px solid #222222;
+    color: #222222;
     transition: all .3s ease-in-out;
 }
 
 .submit:hover {
     color: #fafafa;
-    background-color: #4BB543;
+    background-color: #222222;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+    .application-container{
+        background: #fafafa url(../assets/bg2.png);
+    }
 }
 
 @media only screen and (max-width: 850px) {

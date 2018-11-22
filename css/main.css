@@ -30,7 +30,6 @@ body {
 a {
     color: dodgerblue;
     text-decoration: none;
-
 }
 
 a:hover {
@@ -792,6 +791,7 @@ input:focus::placeholder{
 
 .silver {
     width: 300px;
+    height: auto;
     padding: 1rem;
 }
 
