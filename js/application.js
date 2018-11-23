@@ -51,7 +51,7 @@ function formcheck() {
         alert('Missing required fields!');
         return false;
     }
-    if ($(privacy).val()) {
+    if (!$(privacy).is(':checked')) {
         alert("You must accept the privacy policy");
         return false;
     }
