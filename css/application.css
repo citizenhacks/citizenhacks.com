@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding:  6rem 3rem;
-    background: #fafafa url(../assets/bg.png);
+    background: #fafafa
 }
 
 .application{
@@ -23,6 +23,13 @@
 
 .item-required, form, label{
     width: 100%;
+}
+
+.logo-bg{
+    position: absolute;
+    right: 0;
+    padding: 100rem 10rem;
+    background: #fafafa url(../assets/small.svg);
 }
 
 p{
@@ -155,9 +162,9 @@ textarea:focus {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1440px) {
-    .application-container{
-        background: #fafafa url(../assets/bg2.png);
+@media only screen and (max-width: 1100px) {
+    .logo-bg{
+        display: none;
     }
 }
 
