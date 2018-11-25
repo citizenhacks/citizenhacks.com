@@ -81,24 +81,21 @@
                     <h2>Contact information</h2>
                     <p>We will use your email for future communication</p>
                     <div class="item-required">
-                        <input name="firstName" id="firstName" placeholder="First Name">
+                        <input name="firstName" id="firstName" placeholder="First name">
                     </div>
                     <div class="item-required">
-                        <input name="lastName" id="lastName" placeholder="Last Name">
+                        <input name="lastName" id="lastName" placeholder="Last name">
                     </div>
                     <div class="item-required">
-                        <input name="email" id="email" placeholder="Email" style="border: solid 1px #222222;">
+                        <input name="email" id="email" placeholder="Email" >
+                    </div>
+                    <div class="item-required">
+                        <input name="phone" id="phone" placeholder="Phone number" style="border: solid 1px #222222;">
                     </div>
                     <div class="blue-line line"></div>
                     <h2>Personal details</h2>
                     <div class="item-required">
-                        <label>
-                            <select>
-                                <option value="" disabled selected>Are you above the age of 18?</option>
-                                <option value="Yes">Yes</option>
-                                <option value="No">No</option>
-                            </select>
-                        </label>
+                        <input name="age" id="age" placeholder="What is your age?">
                     </div>
                     <div class="item-required">
                         <label>
@@ -129,6 +126,12 @@
                         <input name="program" id="program" placeholder="Program/Major">
                     </div>
                     <div class="item-required">
+                        <input name="graduation-year" id="graduation-year" placeholder="Graduation year">
+                    </div>
+                    <div class="item-required">
+                        <input name="race" id="race" placeholder="Race">
+                    </div>
+                    <div class="item-required">
                         <label>
                             <select style="border: solid 1px #222222;">
                                 <option value="" disabled selected>How many hackathons have you attended?</option>
@@ -154,7 +157,7 @@
                         <textarea name="pastProject" id="pastProject" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
                     <div class="blue-line line"></div>
-                    <h2>What do you think Citizenship means?</h2>
+                    <h2>What do you think Digital Citizenship means?</h2>
                     <p>It's called 'Citizen' Hacks for a reason ;)</p>
                     <p>(max 600 characters)</p>
                     <div class = "item-required">
@@ -202,11 +205,19 @@
                         </div>
                     </div>
                     <div class="yellow-line line"></div>
-                    <label class="check-container">If you are applying with a team, please list your teammate's emails. Make sure only one member in each team submits this list. Each team can consist of up to four team members
+                    <label class="check-container">I agree to receive follow up emails and newsletter from Citizen Hacks
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="check-container">If you are applying with a team, please list your teammate's emails. Make sure only one member in each team submits this list. Each team can consist of up to four team members
+                    <label class="check-container">I have read agreed to the Privacy Policy of Citizen Hacks here
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-container">I have read and agreed to the MLH Code of Conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-container">I confirm that all my responses on this application are true
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
