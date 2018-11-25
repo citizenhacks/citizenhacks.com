@@ -25,7 +25,6 @@ window.onload = function () {
 };
 
 function formcheck() {
-    console.log("hello");
     let fields = $(".item-required")
         .find("select, textarea, input");
     let msg = "";
