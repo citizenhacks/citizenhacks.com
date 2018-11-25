@@ -43,8 +43,8 @@ p{
 }
 
 .select-dropdown:focus {
-    background: #222222;
-    color: #fafafa;
+    background: #222222 !important;
+    color: #fafafa !important;
 }
 
 select {
@@ -73,8 +73,8 @@ select {
 }
 
 select:focus{
-    background: #222222;
-    color: #fafafa;
+    background: #222222 !important;
+    color: #fafafa !important;
 }
 
 
@@ -104,12 +104,12 @@ input {
 }
 
 input:focus {
-    background: #222222;
-    color: #fafafa;
+    background: #222222 !important;
+    color: #fafafa !important;
 }
 
 input:focus::placeholder{
-    color:#fafafa;
+    color:#fafafa !important;
 }
 
 textarea {
@@ -139,7 +139,7 @@ textarea {
 }
 
 textarea:focus {
-    color: #222222;
+    color: #222222 !important;
 }
 
 .submit {

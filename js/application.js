@@ -65,3 +65,33 @@ function hasScrolled() {
     }
     lastScrollTop = st;
 }
+
+function genderSelect(dropDown) {
+    var textbox = dropDown.form.elements["otherGender"];
+    if (textbox) {
+        textbox.style.display = (dropDown.value === "Other") ? "" : "none";
+        if (dropDown.value === "Other") {
+            textbox.focus();
+        }
+    }
+}
+
+function studySelect(dropDown) {
+    var textbox = dropDown.form.elements["otherStudy"];
+    var div = document.getElementById("otherStudyDiv");
+    if (textbox) {
+        textbox.style.display = (dropDown.value === "Other") ? "" : "none";
+        if (dropDown.value === "Other") {
+            textbox.focus();
+            if (!div.classList.contains("item-required")) div.classList.add("item-required");
+        } else {
+            if (div.classList.contains("item-required")) {
+                div.classList.remove("item-required");
+                console.log("remoevd item required");
+                var input = document.getElementById("otherStudy");
+                input.style.background = '#ffffff';
+
+            }
+        }
+    }
+}

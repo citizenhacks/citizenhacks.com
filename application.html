@@ -99,7 +99,7 @@
                     </div>
                     <div class="item-required">
                         <label>
-                            <select>
+                            <select onchange="genderSelect(this)">
                                 <option value="" disabled selected>What is your gender?</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -108,9 +108,13 @@
                             </select>
                         </label>
                     </div>
+                    <div>
+                        <input placeholder="Please specify your gender" type="text" name="otherGender" style="display: none; height: 51px; margin-bottom: -5px;" />
+                    </div>
+
                     <div class="item-required">
                         <label>
-                            <select>
+                            <select onchange="studySelect(this)">
                                 <option value="" disabled selected>Current level of study?</option>
                                 <option value="HighSchool">High school</option>
                                 <option value="Undergraduate">Undergraduate</option>
@@ -119,6 +123,10 @@
                             </select>
                         </label>
                     </div>
+                    <div id = "otherStudyDiv">
+                        <input id = "otherStudy" placeholder="Please specify your level of study*" type="text" name="otherStudy" style="display: none; height: 51px;" />
+                    </div>
+
                     <div class="item-required">
                         <input name="school" id="school" placeholder="School">
                     </div>
