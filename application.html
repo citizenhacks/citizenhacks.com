@@ -77,7 +77,7 @@
                 <h1>Citizen Hacks Application</h1>
                 <p>Please fill out the information below</p>
                 <div class="pink-line"></div>
-                <form action="" method="get">
+                <form action="" method="get" onsubmit="return formcheck()">
                     <h2>Contact information</h2>
                     <p>We will use your email for future communication</p>
                     <div class="item-required">
@@ -211,16 +211,16 @@
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="check-container">I have read agreed to the Privacy Policy of Citizen Hacks <a href="https://citizenhacks.com/privacy-policy.pdf" target="_blank">here</a>
-                        <input type="checkbox">
+                    <label class="check-container">I have read and agreed to the Privacy Policy of Citizen Hacks <a href="https://citizenhacks.com/privacy-policy.pdf" target="_blank">here</a>
+                        <input type="checkbox" id="privacyPolicy">
                         <span class="checkmark"></span>
                     </label>
                     <label class="check-container">I have read and agreed to the MLH Code of Conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>
-                        <input type="checkbox">
+                        <input type="checkbox" id="mlhConduct">
                         <span class="checkmark"></span>
                     </label>
                     <label class="check-container">I confirm that all my responses on this application are true
-                        <input type="checkbox">
+                        <input type="checkbox" id="responseTrue">
                         <span class="checkmark"></span>
                     </label>
                     <div>

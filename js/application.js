@@ -25,10 +25,15 @@ window.onload = function () {
 };
 
 function formcheck() {
-    var fields = $(".item-required")
+    console.log("hello");
+    let fields = $(".item-required")
         .find("select, textarea, input");
-    var msg = "";
-    var flag = false;
+    let msg = "";
+    let flag = false;
+    let privacy = $("#privacyPolicy");
+    let mlhConduct = $("#mlhConduct");
+    let trueResponse = $("#responseTrue");
+
     $.each(fields, function(i, field) {
         if (!$(field).val()) {
             if ($(field).is("textarea")) {
@@ -46,8 +51,23 @@ function formcheck() {
             }
         }
     });
-    if (flag) alert('Missing required fields!');
-    console.log(fields);
+    if (flag) {
+        alert('Missing required fields!');
+        return false;
+    }
+    if (!$(privacy).is(':checked')) {
+        alert("You must accept the privacy policy");
+        return false;
+    }
+    if (!$(mlhConduct).is(':checked')) {
+        alert("You must accept the MLH code of conduct");
+        return false;
+    }
+    if (!$(trueResponse).is(':checked')) {
+        alert("You must confirm your responses are true");
+        return false;
+    }
+    return true;
 }
 
 
