@@ -207,6 +207,21 @@
                         </div>
                     </div>
                     <div class="yellow-line line"></div>
+                    <div class="item-required">
+                        <label>
+                            <select onchange="hearSelect(this)" style="border: solid 1px #222222;">
+                                <option value="" disabled selected>Where did you hear about us from?</option>
+                                <option value="word-of-mouth">Word of mouth</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="school">School</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <input placeholder="Please specify you heard us from" type="text" name="otherHear" style="display: none; height: 51px; margin-bottom: -5px; border: solid 1px #222222; border-top: none;" />
+                    </div>
                     <label class="check-container">I agree to receive follow up emails and newsletter from Citizen Hacks
                         <input type="checkbox">
                         <span class="checkmark"></span>

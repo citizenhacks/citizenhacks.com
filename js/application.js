@@ -95,6 +95,16 @@ function genderSelect(dropDown) {
     }
 }
 
+function hearSelect(dropDown) {
+  var textbox = dropDown.form.elements["otherHear"];
+  if (textbox) {
+    textbox.style.display = (dropDown.value === "Other") ? "" : "none";
+    if (dropDown.value === "Other") {
+      textbox.focus();
+    }
+  }
+}
+
 function studySelect(dropDown) {
     var textbox = dropDown.form.elements["otherStudy"];
     var div = document.getElementById("otherStudyDiv");
