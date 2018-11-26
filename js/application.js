@@ -32,6 +32,8 @@ function formcheck() {
     let privacy = $("#privacyPolicy");
     let mlhConduct = $("#mlhConduct");
     let trueResponse = $("#responseTrue");
+    let age = document.getElementById("age");
+    let phone = document.getElementById("phone");
 
     $.each(fields, function(i, field) {
         if (!$(field).val()) {
@@ -50,10 +52,21 @@ function formcheck() {
             }
         }
     });
+    console.log(parseInt(phone.value).toString().length);
+    if (!parseInt(phone.value) || parseInt(phone.value).toString().length !== 10 || phone.value.length !== 10 || parseInt(phone.value) < 0) {
+        alert("Make sure phone number is valid and all numerical");
+        return false;
+    }
+    if (!parseInt(age.value) || parseInt(age.value) < 0 || parseInt(age.value) > 100) {
+        alert("You must enter a valid age");
+        return false;
+    }
     if (flag) {
         alert('Missing required fields!');
         return false;
     }
+
+
     if (!$(privacy).is(':checked')) {
         alert("You must accept the privacy policy");
         return false;
