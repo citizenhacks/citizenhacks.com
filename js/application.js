@@ -34,6 +34,7 @@ function formcheck() {
     let trueResponse = $("#responseTrue");
     let age = document.getElementById("age");
     let phone = document.getElementById("phone");
+    let email = document.getElementById("email");
 
     $.each(fields, function(i, field) {
         if (!$(field).val()) {
@@ -53,6 +54,10 @@ function formcheck() {
         }
     });
 
+    if (email.value.indexOf('@') < 0 || email.value.indexOf('.') < 0) {
+        alert("You must enter a valid email");
+        return false;
+    }
     if (!parseInt(phone.value) || parseInt(phone.value).toString().length !== 10 || phone.value.length !== 10 || parseInt(phone.value) < 0) {
         alert("Make sure phone number is valid and all numerical");
         return false;
@@ -61,11 +66,11 @@ function formcheck() {
         alert("You must enter a valid age");
         return false;
     }
+
     if (flag) {
         alert('Missing required fields!');
         return false;
     }
-
 
     if (!$(privacy).is(':checked')) {
         alert("You must accept the privacy policy");
