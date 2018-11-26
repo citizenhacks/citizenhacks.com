@@ -99,7 +99,7 @@
                     </div>
                     <div class="item-required">
                         <label>
-                            <select onchange="genderSelect(this)">
+                            <select onchange="genderSelect(this)" name="gender">
                                 <option value="" disabled selected>What is your gender?</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -114,7 +114,7 @@
 
                     <div class="item-required">
                         <label>
-                            <select onchange="studySelect(this)">
+                            <select onchange="studySelect(this)" name="studyLevel">
                                 <option value="" disabled selected>Current level of study?</option>
                                 <option value="HighSchool">High school</option>
                                 <option value="Undergraduate">Undergraduate</option>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="item-required">
                         <label>
-                            <select style="border: solid 1px #222222;">
+                            <select style="border: solid 1px #222222;" name="hackathons">
                                 <option value="" disabled selected>How many hackathons have you attended?</option>
                                 <option value="0">0</option>
                                 <option value="1-3">1-3</option>
@@ -209,7 +209,7 @@
                     <div class="yellow-line line"></div>
                     <div class="item-required">
                         <label>
-                            <select onchange="hearSelect(this)" style="border: solid 1px #222222;">
+                            <select name="hearFrom" onchange="hearSelect(this)" style="border: solid 1px #222222;">
                                 <option value="" disabled selected>Where did you hear about us from?</option>
                                 <option value="word-of-mouth">Word of mouth</option>
                                 <option value="facebook">Facebook</option>
@@ -223,19 +223,19 @@
                         <input placeholder="Please specify you heard us from" type="text" name="otherHear" style="display: none; height: 51px; margin-bottom: -5px; border: solid 1px #222222; border-top: none;" />
                     </div>
                     <label class="check-container">I agree to receive follow up emails and newsletter from Citizen Hacks
-                        <input type="checkbox">
+                        <input type="checkbox" name="newsletter" value="true">
                         <span class="checkmark"></span>
                     </label>
                     <label class="check-container">I have read and agreed to the Privacy Policy of Citizen Hacks <a href="https://citizenhacks.com/privacy-policy.pdf" target="_blank">here</a>
-                        <input type="checkbox" id="privacyPolicy">
+                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="true">
                         <span class="checkmark"></span>
                     </label>
                     <label class="check-container">I have read and agreed to the MLH Code of Conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>
-                        <input type="checkbox" id="mlhConduct">
+                        <input type="checkbox" id="mlhConduct" name="mlhConduct" value="true">
                         <span class="checkmark"></span>
                     </label>
                     <label class="check-container">I confirm that all my responses on this application are true
-                        <input type="checkbox" id="responseTrue">
+                        <input type="checkbox" id="responseTrue" name="responseTrue" value="true">
                         <span class="checkmark"></span>
                     </label>
                     <div>
