@@ -66,6 +66,17 @@ function formcheck() {
         alert("You must confirm your responses are true");
         return false;
     }
+    /*$.post("http://localhost:5000/apply", $("#application").serialize())
+      .done(function(data) {
+        if (data.success) {
+          // TODO: Handle this visually
+          console.log('Submitted application successfully!');
+        }
+      })
+      .fail(function(err) {
+        // TODO: Handle this visually
+        console.log(err.responseJSON);
+      })*/
     return true;
 }
 
