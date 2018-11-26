@@ -52,7 +52,7 @@ function formcheck() {
             }
         }
     });
-    console.log(parseInt(phone.value).toString().length);
+
     if (!parseInt(phone.value) || parseInt(phone.value).toString().length !== 10 || phone.value.length !== 10 || parseInt(phone.value) < 0) {
         alert("Make sure phone number is valid and all numerical");
         return false;
@@ -140,7 +140,6 @@ function studySelect(dropDown) {
         } else {
             if (div.classList.contains("item-required")) {
                 div.classList.remove("item-required");
-                console.log("remoevd item required");
                 var input = document.getElementById("otherStudy");
                 input.style.background = '#ffffff';
 
