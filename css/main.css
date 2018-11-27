@@ -467,9 +467,29 @@ header {
     /* background by SVGBackgrounds.com */
 }
 
+.hero2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 .hero-big-title {
     color: #222222;
     font-size: 7rem;
+    font-weight: 600;
+}
+
+.hero-social{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.hero-success {
+    color: #222222;
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -644,6 +664,10 @@ input:focus::placeholder{
     .sub-title {
         font-size: 1.2rem;
         text-align: left;
+    }
+
+    .hero-social{
+        justify-content: left;
     }
 
     .date {
@@ -959,7 +983,7 @@ footer {
 }
 
 .icon-container {
-    padding: 0rem 1rem;
+    padding: 0 1rem;
     color: #fafafa;
 }
 
@@ -970,6 +994,9 @@ footer {
 
     .footer-container {
         padding: 3rem 1.5rem;
+    }
+    .fb-left{
+        padding-left: 0;
     }
 }
 

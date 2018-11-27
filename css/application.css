@@ -30,6 +30,7 @@
     right: 0;
     padding: 107.2rem 10rem;
     background: #fafafa url(../assets/small.svg);
+    opacity: 0.8;
 }
 
 p{

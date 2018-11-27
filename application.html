@@ -30,6 +30,23 @@
 </head>
 
 <body>
+<ul id="menu">
+    <a href="#contact" class="panel-button">
+        <li>Contact Information</li>
+    </a>
+    <a href="#personal" class="panel-button">
+        <li>Personal Details</li>
+    </a>
+    <a href="#additional" class="panel-button">
+        <li>Additional Information</li>
+    </a>
+    <a href="#team" class="panel-button">
+        <li>Team</li>
+    </a>
+    <a href="#submit" class="panel-button">
+        <li>Submit</li>
+    </a>
+</ul>
 <div class="body">
     <div class="bg-cover" class="reveal"></div>
     <div class="panel">
@@ -76,7 +93,7 @@
                 <div class="mobile bumper"></div>
                 <h1>Citizen Hacks Application</h1>
                 <p>Please fill out the information below</p>
-                <div class="pink-line"></div>
+                <div class="pink-line" id="contact"></div>
                 <form id="application">
                     <h2>Contact information</h2>
                     <p>We will use your email for future communication</p>
@@ -92,7 +109,7 @@
                     <div class="item-required">
                         <input name="phone" id="phone" placeholder="Phone number (only numbers)" style="border: solid 1px #222222;">
                     </div>
-                    <div class="blue-line line"></div>
+                    <div class="blue-line line" id="personal"></div>
                     <h2>Personal details</h2>
                     <div class="item-required">
                         <input name="age" id="age" placeholder="What is your age?">
@@ -165,7 +182,7 @@
                     <div class = "item-required">
                         <textarea name="citizenship" id="citizenship" cols="40" rows="4" maxlength="600"></textarea>
                     </div>
-                    <div class="yellow-line line"></div>
+                    <div class="yellow-line line" id="additional"></div>
                     <h2>Additional Info (Optional)</h2>
                     <p>Show us some of your projects!</p>
                     <div>
@@ -189,7 +206,7 @@
                         <textarea name="dietaryRestrictions" id="dietaryRestrictions" cols="40" rows="5"
                                   maxlength="600"></textarea>
                     </div>
-                    <div class="blue-line line"></div>
+                    <div class="blue-line line" id="team"></div>
                     <h2>Team (Optional)</h2>
                     <p>If you are applying with a team, please list your teammate's emails.
                         Make sure only one member in each team submits this list.
@@ -206,7 +223,7 @@
                                    style="border: solid 1px #222222;"/>
                         </div>
                     </div>
-                    <div class="yellow-line line"></div>
+                    <div class="yellow-line line" id="submit"></div>
                     <div class="item-required">
                         <label>
                             <select name="hearFrom" onchange="hearSelect(this)" style="border: solid 1px #222222;">
